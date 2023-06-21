@@ -11,19 +11,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="iN0-l3-epB" id="npl-3T-tV4"/>
-                <outlet property="dropDownTextField" destination="TVZ-yG-7gu" id="yQG-0G-MOa"/>
-                <outlet property="dropDownView" destination="jxb-Bm-f4X" id="Xln-9f-pNy"/>
+                <outlet property="dropDownOptionField" destination="ZwV-nM-dMJ" id="J8N-km-9tR"/>
+                <outlet property="dropDownTextField" destination="JL0-V3-EzJ" id="QaD-5c-fop"/>
                 <outlet property="fieldLabel" destination="TT4-8a-Obm" id="eBe-V4-vPr"/>
                 <outlet property="outerView" destination="gLb-Ig-yLh" id="jKI-eG-FUU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="361" height="114"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLb-Ig-yLh">
-                    <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="114"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT4-8a-Obm" userLabel="header">
                             <rect key="frame" x="24" y="0.0" width="327" height="20"/>
@@ -34,33 +34,34 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-Bm-f4X" userLabel="DropdownView">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Everybody" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JL0-V3-EzJ">
                             <rect key="frame" x="24" y="36" width="313" height="32"/>
-                            <subviews>
-                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVZ-yG-7gu">
-                                    <rect key="frame" x="16" y="8" width="287" height="16"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="TVZ-yG-7gu" secondAttribute="trailing" constant="10" id="GZX-XP-MFN"/>
-                                <constraint firstAttribute="height" constant="32" id="W5p-Su-MRg"/>
-                                <constraint firstItem="TVZ-yG-7gu" firstAttribute="leading" secondItem="jxb-Bm-f4X" secondAttribute="leading" constant="16" id="gNG-oV-PXz"/>
-                                <constraint firstAttribute="bottom" secondItem="TVZ-yG-7gu" secondAttribute="bottom" constant="8" id="qc1-cR-fwV"/>
-                                <constraint firstItem="TVZ-yG-7gu" firstAttribute="top" secondItem="jxb-Bm-f4X" secondAttribute="top" constant="8" id="yco-kA-baG"/>
+                                <constraint firstAttribute="height" constant="32" id="G1k-jt-ku9"/>
                             </constraints>
-                        </view>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Me" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZwV-nM-dMJ">
+                            <rect key="frame" x="24" y="68" width="313" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="mSr-9O-Owa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="JL0-V3-EzJ" firstAttribute="leading" secondItem="gLb-Ig-yLh" secondAttribute="leading" constant="24" id="2mF-Z1-dTd"/>
+                        <constraint firstItem="JL0-V3-EzJ" firstAttribute="top" secondItem="TT4-8a-Obm" secondAttribute="bottom" constant="16" id="7oE-RG-8K6"/>
                         <constraint firstItem="TT4-8a-Obm" firstAttribute="top" secondItem="gLb-Ig-yLh" secondAttribute="top" id="GRT-KS-zD2"/>
-                        <constraint firstItem="jxb-Bm-f4X" firstAttribute="leading" secondItem="gLb-Ig-yLh" secondAttribute="leading" constant="24" id="OlH-DQ-zzO"/>
+                        <constraint firstAttribute="trailing" secondItem="ZwV-nM-dMJ" secondAttribute="trailing" constant="24" id="L80-Yq-9o0"/>
+                        <constraint firstItem="ZwV-nM-dMJ" firstAttribute="leading" secondItem="gLb-Ig-yLh" secondAttribute="leading" constant="24" id="Ngz-6A-wP0"/>
+                        <constraint firstItem="ZwV-nM-dMJ" firstAttribute="top" secondItem="JL0-V3-EzJ" secondAttribute="bottom" id="Wix-dR-235"/>
                         <constraint firstAttribute="trailing" secondItem="TT4-8a-Obm" secondAttribute="trailing" constant="10" id="hwS-Im-gzf"/>
-                        <constraint firstAttribute="trailing" secondItem="jxb-Bm-f4X" secondAttribute="trailing" constant="24" id="jXF-Oi-GEF"/>
                         <constraint firstItem="TT4-8a-Obm" firstAttribute="leading" secondItem="gLb-Ig-yLh" secondAttribute="leading" constant="24" id="mMt-Z0-Ajw"/>
-                        <constraint firstItem="jxb-Bm-f4X" firstAttribute="top" secondItem="TT4-8a-Obm" secondAttribute="bottom" constant="16" id="mSJ-q2-Rsf"/>
+                        <constraint firstAttribute="trailing" secondItem="JL0-V3-EzJ" secondAttribute="trailing" constant="24" id="reu-iv-Ypo"/>
                     </constraints>
                 </view>
             </subviews>
@@ -73,7 +74,7 @@
                 <constraint firstItem="gLb-Ig-yLh" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="u16-YT-5kZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-281.67938931297709" y="-52.816901408450704"/>
+            <point key="canvasLocation" x="-281.67938931297709" y="-47.887323943661976"/>
         </view>
     </objects>
     <resources>

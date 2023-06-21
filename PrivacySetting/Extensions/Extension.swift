@@ -23,7 +23,7 @@ extension UISwitch {
 extension UITextField {
     func setIcon(_ image: UIImage) {
         let iconView = UIImageView(frame:
-                                    CGRect(x: 10, y: 10, width: 20, height: 10))
+                                    CGRect(x: 0, y: 10, width: 20, height: 10))
         
         iconView.image = image
         let iconContainerView: UIView = UIView(frame:
