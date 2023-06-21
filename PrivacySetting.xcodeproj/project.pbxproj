@@ -13,7 +13,7 @@
 		544A2D2C2A417811004B8470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544A2D2A2A417811004B8470 /* Main.storyboard */; };
 		544A2D2E2A417812004B8470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544A2D2D2A417812004B8470 /* Assets.xcassets */; };
 		544A2D312A417812004B8470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544A2D2F2A417812004B8470 /* LaunchScreen.storyboard */; };
-		544A2D472A41B813004B8470 /* SwitchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A2D462A41B813004B8470 /* SwitchExtension.swift */; };
+		544A2D472A41B813004B8470 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A2D462A41B813004B8470 /* Extension.swift */; };
 		544A2D5C2A41C05A004B8470 /* SwitchFields.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544A2D5B2A41C05A004B8470 /* SwitchFields.xib */; };
 		544A2D5E2A41C07C004B8470 /* SwitchFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A2D5D2A41C07C004B8470 /* SwitchFields.swift */; };
 		544A2D612A41C1A0004B8470 /* DropDownFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A2D602A41C1A0004B8470 /* DropDownFields.swift */; };
@@ -29,7 +29,7 @@
 		544A2D2D2A417812004B8470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		544A2D302A417812004B8470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		544A2D322A417812004B8470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		544A2D462A41B813004B8470 /* SwitchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchExtension.swift; sourceTree = "<group>"; };
+		544A2D462A41B813004B8470 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		544A2D5B2A41C05A004B8470 /* SwitchFields.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchFields.xib; sourceTree = "<group>"; };
 		544A2D5D2A41C07C004B8470 /* SwitchFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchFields.swift; sourceTree = "<group>"; };
 		544A2D602A41C1A0004B8470 /* DropDownFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownFields.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		544A2D452A41B7EE004B8470 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				544A2D462A41B813004B8470 /* SwitchExtension.swift */,
+				544A2D462A41B813004B8470 /* Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 				544A2D252A417811004B8470 /* AppDelegate.swift in Sources */,
 				544A2D612A41C1A0004B8470 /* DropDownFields.swift in Sources */,
 				544A2D272A417811004B8470 /* SceneDelegate.swift in Sources */,
-				544A2D472A41B813004B8470 /* SwitchExtension.swift in Sources */,
+				544A2D472A41B813004B8470 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

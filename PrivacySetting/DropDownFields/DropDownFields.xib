@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,8 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="iN0-l3-epB" id="npl-3T-tV4"/>
-                <outlet property="dropDownButton" destination="WYx-6p-pl8" id="1uF-Kw-Ax0"/>
-                <outlet property="dropDownLabel" destination="cKz-Y9-7X5" id="h2m-eC-t58"/>
+                <outlet property="dropDownTextField" destination="TVZ-yG-7gu" id="yQG-0G-MOa"/>
                 <outlet property="dropDownView" destination="jxb-Bm-f4X" id="Xln-9f-pNy"/>
                 <outlet property="fieldLabel" destination="TT4-8a-Obm" id="eBe-V4-vPr"/>
                 <outlet property="outerView" destination="gLb-Ig-yLh" id="jKI-eG-FUU"/>
@@ -39,34 +37,19 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-Bm-f4X" userLabel="DropdownView">
                             <rect key="frame" x="24" y="36" width="313" height="32"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-Y9-7X5" userLabel="DropDownField">
-                                    <rect key="frame" x="16" y="8" width="268" height="16"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYx-6p-pl8">
-                                    <rect key="frame" x="289" y="13" width="6" height="12"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="12" id="KSq-DZ-vZy"/>
-                                        <constraint firstAttribute="width" constant="6" id="lwe-Fb-UpR"/>
-                                    </constraints>
-                                    <color key="tintColor" red="0.070588238540000001" green="0.070588238540000001" blue="0.070588238540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain">
-                                        <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
-                                    </buttonConfiguration>
-                                </button>
+                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVZ-yG-7gu">
+                                    <rect key="frame" x="16" y="8" width="287" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="WYx-6p-pl8" secondAttribute="trailing" constant="18" id="OKm-LJ-958"/>
-                                <constraint firstItem="cKz-Y9-7X5" firstAttribute="leading" secondItem="jxb-Bm-f4X" secondAttribute="leading" constant="16" id="Ssz-fZ-Iz7"/>
+                                <constraint firstAttribute="trailing" secondItem="TVZ-yG-7gu" secondAttribute="trailing" constant="10" id="GZX-XP-MFN"/>
                                 <constraint firstAttribute="height" constant="32" id="W5p-Su-MRg"/>
-                                <constraint firstItem="cKz-Y9-7X5" firstAttribute="top" secondItem="jxb-Bm-f4X" secondAttribute="top" constant="8" id="aQF-0j-wRa"/>
-                                <constraint firstItem="WYx-6p-pl8" firstAttribute="top" secondItem="jxb-Bm-f4X" secondAttribute="top" constant="13" id="aS9-K7-TIF"/>
-                                <constraint firstAttribute="bottom" secondItem="cKz-Y9-7X5" secondAttribute="bottom" constant="8" id="akQ-ZD-1cd"/>
-                                <constraint firstItem="WYx-6p-pl8" firstAttribute="leading" secondItem="cKz-Y9-7X5" secondAttribute="trailing" constant="5" id="rv7-zy-P6X"/>
+                                <constraint firstItem="TVZ-yG-7gu" firstAttribute="leading" secondItem="jxb-Bm-f4X" secondAttribute="leading" constant="16" id="gNG-oV-PXz"/>
+                                <constraint firstAttribute="bottom" secondItem="TVZ-yG-7gu" secondAttribute="bottom" constant="8" id="qc1-cR-fwV"/>
+                                <constraint firstItem="TVZ-yG-7gu" firstAttribute="top" secondItem="jxb-Bm-f4X" secondAttribute="top" constant="8" id="yco-kA-baG"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -94,7 +77,6 @@
         </view>
     </objects>
     <resources>
-        <image name="chevron.down" catalog="system" width="128" height="70"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

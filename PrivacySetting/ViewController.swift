@@ -32,14 +32,10 @@ extension ViewController{
         switchField3.fieldLabel.text = "Keep profile picture private ?"
         
         dropDownField1.fieldLabel.text = "Gender visible to"
-        dropDownField1.dropDownLabel.text = "Everyone"
         dropDownField2.fieldLabel.text = "Date of birth visible to"
-        dropDownField2.dropDownLabel.text = "Everyone"
         dropDownField3.fieldLabel.text = "Anniversary visible to"
-        dropDownField3.dropDownLabel.text = "Everyone"
         dropDownField4.fieldLabel.text = "Blood group visbile to"
-        dropDownField4.dropDownLabel.text = "Everyone"
-        
+
         footerView.backgroundColor = UIColor.white
         footerView.layer.shadowColor = UIColor(red: 0.192, green: 0.165, blue: 0.114, alpha: 1).cgColor
         footerView.layer.shadowOpacity = 0.1

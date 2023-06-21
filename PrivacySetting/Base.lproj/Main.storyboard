@@ -46,94 +46,84 @@
                                     <constraint firstAttribute="height" constant="72" id="ga5-cL-Khx"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi3-UA-fDa" userLabel="FieldsView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AI-PX-cA5">
                                 <rect key="frame" x="0.0" y="131" width="393" height="627"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1z-aw-Ebq" userLabel="DropDownField1" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="16" width="393" height="68"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="68" id="v9A-K3-jFA"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-he-Vzw" userLabel="DropDownField2" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="108" width="393" height="68"/>
-                                        <viewLayoutGuide key="safeArea" id="Q0C-2L-TcP"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="68" id="JMH-Bf-atX"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2e-Ui-aB2" userLabel="DropDownField3" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="393" height="68"/>
-                                        <viewLayoutGuide key="safeArea" id="7H2-48-imk"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="68" id="BZD-Qt-BO4"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-sT-Bas" userLabel="DropDownField4" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="292" width="393" height="68"/>
-                                        <viewLayoutGuide key="safeArea" id="OEN-Cl-3ho"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="68" id="ejP-BY-YOl"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOJ-Ja-Ilq" userLabel="SwitchField1" customClass="SwitchFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="384" width="393" height="36"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="jmd-X4-k9f"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9M-Ba-HEF" userLabel="SwitchField2" customClass="SwitchFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="444" width="393" height="36"/>
-                                        <viewLayoutGuide key="safeArea" id="wag-77-Smf"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="RkF-7R-Lyy"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-fW-dcf" userLabel="SwitchField3" customClass="SwitchFields" customModule="PrivacySetting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="504" width="393" height="36"/>
-                                        <viewLayoutGuide key="safeArea" id="Ikb-k1-iJJ"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="MSi-pQ-uJT"/>
-                                        </constraints>
-                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Wqi-Eg-3O3">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="614"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1z-aw-Ebq" userLabel="DropDownField1" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="v9A-K3-jFA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-he-Vzw" userLabel="DropDownField2" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="104" width="393" height="80"/>
+                                                <viewLayoutGuide key="safeArea" id="Q0C-2L-TcP"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="JMH-Bf-atX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2e-Ui-aB2" userLabel="DropDownField3" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="208" width="393" height="80"/>
+                                                <viewLayoutGuide key="safeArea" id="7H2-48-imk"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="BZD-Qt-BO4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-sT-Bas" userLabel="DropDownField4" customClass="DropDownFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="312" width="393" height="80"/>
+                                                <viewLayoutGuide key="safeArea" id="OEN-Cl-3ho"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="ejP-BY-YOl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOJ-Ja-Ilq" userLabel="SwitchField1" customClass="SwitchFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="416" width="393" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="jmd-X4-k9f"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9M-Ba-HEF" userLabel="SwitchField2" customClass="SwitchFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="490" width="393" height="50"/>
+                                                <viewLayoutGuide key="safeArea" id="wag-77-Smf"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="RkF-7R-Lyy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-fW-dcf" userLabel="SwitchField3" customClass="SwitchFields" customModule="PrivacySetting" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="564" width="393" height="50"/>
+                                                <viewLayoutGuide key="safeArea" id="Ikb-k1-iJJ"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="MSi-pQ-uJT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="a2e-Ui-aB2" firstAttribute="top" secondItem="yBb-he-Vzw" secondAttribute="bottom" constant="24" id="0eT-CN-gZa"/>
-                                    <constraint firstItem="yBb-he-Vzw" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="2M1-LE-fg3"/>
-                                    <constraint firstItem="dOJ-Ja-Ilq" firstAttribute="top" secondItem="UXc-sT-Bas" secondAttribute="bottom" constant="24" id="5kr-eg-0g1"/>
-                                    <constraint firstItem="U7O-fW-dcf" firstAttribute="top" secondItem="S9M-Ba-HEF" secondAttribute="bottom" constant="24" id="6hZ-vZ-2uS"/>
-                                    <constraint firstAttribute="trailing" secondItem="dOJ-Ja-Ilq" secondAttribute="trailing" id="EYY-aF-jG7"/>
-                                    <constraint firstAttribute="trailing" secondItem="a2e-Ui-aB2" secondAttribute="trailing" id="JqG-vv-B3r"/>
-                                    <constraint firstAttribute="trailing" secondItem="yBb-he-Vzw" secondAttribute="trailing" id="KGY-0s-8mU"/>
-                                    <constraint firstItem="yBb-he-Vzw" firstAttribute="top" secondItem="o1z-aw-Ebq" secondAttribute="bottom" constant="24" id="ODn-o6-y7p"/>
-                                    <constraint firstAttribute="trailing" secondItem="U7O-fW-dcf" secondAttribute="trailing" id="PPy-bs-JB4"/>
-                                    <constraint firstItem="U7O-fW-dcf" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="Wx5-Db-cie"/>
-                                    <constraint firstItem="UXc-sT-Bas" firstAttribute="top" secondItem="a2e-Ui-aB2" secondAttribute="bottom" constant="24" id="YzR-sR-1Qm"/>
-                                    <constraint firstItem="UXc-sT-Bas" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="erN-uh-pgZ"/>
-                                    <constraint firstItem="dOJ-Ja-Ilq" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="kcL-OU-Y7Q"/>
-                                    <constraint firstItem="a2e-Ui-aB2" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="oWB-xT-k8f"/>
-                                    <constraint firstAttribute="trailing" secondItem="UXc-sT-Bas" secondAttribute="trailing" id="pXu-rp-yNq"/>
-                                    <constraint firstItem="o1z-aw-Ebq" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="psS-wU-Gb7"/>
-                                    <constraint firstAttribute="trailing" secondItem="S9M-Ba-HEF" secondAttribute="trailing" id="qhH-yQ-7kF"/>
-                                    <constraint firstItem="S9M-Ba-HEF" firstAttribute="top" secondItem="dOJ-Ja-Ilq" secondAttribute="bottom" constant="24" id="rLi-b5-1C7"/>
-                                    <constraint firstItem="o1z-aw-Ebq" firstAttribute="top" secondItem="Pi3-UA-fDa" secondAttribute="top" constant="16" id="viP-eu-pZy"/>
-                                    <constraint firstAttribute="trailing" secondItem="o1z-aw-Ebq" secondAttribute="trailing" id="wTT-p3-3fV"/>
-                                    <constraint firstItem="S9M-Ba-HEF" firstAttribute="leading" secondItem="Pi3-UA-fDa" secondAttribute="leading" id="z6F-Y4-Qu5"/>
+                                    <constraint firstItem="Wqi-Eg-3O3" firstAttribute="bottom" secondItem="nDQ-5f-7gw" secondAttribute="bottom" id="2KO-l8-ESb"/>
+                                    <constraint firstItem="Wqi-Eg-3O3" firstAttribute="width" secondItem="sxc-QA-jkv" secondAttribute="width" id="VkX-Zh-gnP"/>
+                                    <constraint firstItem="Wqi-Eg-3O3" firstAttribute="top" secondItem="nDQ-5f-7gw" secondAttribute="top" id="XlG-jt-S6R"/>
+                                    <constraint firstItem="Wqi-Eg-3O3" firstAttribute="leading" secondItem="nDQ-5f-7gw" secondAttribute="leading" id="gU9-Bh-5fq"/>
+                                    <constraint firstItem="Wqi-Eg-3O3" firstAttribute="trailing" secondItem="nDQ-5f-7gw" secondAttribute="trailing" id="ybg-9o-PnW"/>
                                 </constraints>
-                            </view>
+                                <viewLayoutGuide key="contentLayoutGuide" id="nDQ-5f-7gw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="sxc-QA-jkv"/>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-Ad-328" userLabel="DoneBtnView">
                                 <rect key="frame" x="0.0" y="758" width="393" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQY-uj-SAK">
-                                        <rect key="frame" x="24" y="8" width="345" height="40"/>
+                                        <rect key="frame" x="24" y="8" width="345" height="38"/>
                                         <color key="backgroundColor" red="0.40000000000000002" green="0.2196078431372549" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Done">
@@ -147,7 +137,6 @@
                                     <constraint firstItem="MQY-uj-SAK" firstAttribute="leading" secondItem="1pc-Ad-328" secondAttribute="leading" constant="24" id="54h-bE-Nsq"/>
                                     <constraint firstAttribute="height" constant="60" id="Kx1-n3-1os"/>
                                     <constraint firstItem="MQY-uj-SAK" firstAttribute="top" secondItem="1pc-Ad-328" secondAttribute="top" constant="8" id="X6d-74-1se"/>
-                                    <constraint firstAttribute="bottom" secondItem="MQY-uj-SAK" secondAttribute="bottom" constant="12" id="ZGS-C7-Rmm"/>
                                     <constraint firstAttribute="trailing" secondItem="MQY-uj-SAK" secondAttribute="trailing" constant="24" id="p1w-pL-BSW"/>
                                 </constraints>
                             </view>
@@ -157,14 +146,14 @@
                         <constraints>
                             <constraint firstItem="4aC-as-yQz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="27F-se-dcc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4aC-as-yQz" secondAttribute="trailing" id="8An-4y-Hpw"/>
+                            <constraint firstAttribute="trailing" secondItem="8AI-PX-cA5" secondAttribute="trailing" id="Idg-Kz-YeP"/>
                             <constraint firstItem="4aC-as-yQz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K2c-TU-Jw5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pi3-UA-fDa" secondAttribute="trailing" id="V1N-Hl-b65"/>
-                            <constraint firstItem="1pc-Ad-328" firstAttribute="top" secondItem="Pi3-UA-fDa" secondAttribute="bottom" id="XJi-zj-adK"/>
+                            <constraint firstItem="8AI-PX-cA5" firstAttribute="top" secondItem="4aC-as-yQz" secondAttribute="bottom" id="P4N-m0-vER"/>
+                            <constraint firstItem="8AI-PX-cA5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="REF-he-urH"/>
+                            <constraint firstItem="1pc-Ad-328" firstAttribute="top" secondItem="8AI-PX-cA5" secondAttribute="bottom" id="enX-gE-r0h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1pc-Ad-328" secondAttribute="trailing" id="etK-wK-133"/>
-                            <constraint firstItem="Pi3-UA-fDa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hO8-c2-35e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1pc-Ad-328" secondAttribute="bottom" id="j8F-Oi-175"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1pc-Ad-328" secondAttribute="bottom" id="lsh-7B-QyU"/>
                             <constraint firstItem="1pc-Ad-328" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z3g-48-d1d"/>
-                            <constraint firstItem="Pi3-UA-fDa" firstAttribute="top" secondItem="4aC-as-yQz" secondAttribute="bottom" id="z4B-zJ-Zlz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -180,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-115.26717557251908" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-116.25" y="3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>

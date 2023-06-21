@@ -9,11 +9,10 @@ import UIKit
 
 class DropDownFields: UIView {
 
+    @IBOutlet weak var dropDownTextField: UITextField!
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var outerView: UIView!
     @IBOutlet weak var fieldLabel: UILabel!
-    @IBOutlet weak var dropDownLabel: UILabel!
-    @IBOutlet weak var dropDownButton: UIButton!
     @IBOutlet weak var dropDownView: UIView!
     
     override init(frame: CGRect) {
@@ -38,6 +37,8 @@ extension DropDownFields{
     }
     
     private func commonSettings(){
+        self.dropDownTextField.text = "Everybody"
+        self.dropDownTextField.setIcon(UIImage(systemName: "chevron.down")!)
         self.dropDownView.layer.cornerRadius = 4
         self.dropDownView.layer.borderColor = UIColor(red: 219/255, green: 219/255, blue: 219/255, alpha: 1).cgColor
         self.dropDownView.layer.borderWidth = 1
